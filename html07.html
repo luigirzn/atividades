@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="processar_formulario.php" method="post">
+        <label for="nome">nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <p>Gênero:</p>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="outros" name="genero" value="outros">
+        <label for="outros">outros</label>
+        
+
+        <p>Estilos Musicais Preferidos:</p>
+        <input type="checkbox" id="rock" name="estilos[]" value="Rock">
+        <label for="rock">Rock</label>
+        <input type="checkbox" id="pop" name="estilos[]" value="Pop">
+        <label for="pop">Pop</label>
+        <input type="checkbox" id="hiphop" name="estilos[]" value="Hip Hop">
+        <label for="hiphop">Hip Hop</label>
+        <input type="checkbox" id="funk" name="estilos[]" value="funk">
+        <label for="funk">funk</label>
+
+        <p>Cor Favorita:</p>
+        <select id="cor" name="cor">
+            <option value="preto">preto</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="amarelo">Amarelo</option>
+        </select>
+
+        <p>Unidade IOS Mais Próxima da Sua Residência:</p>
+        <input list="unidades" id="unidade" name="unidade">
+        <datalist id="unidades">
+            <option value="santana">
+            <option value="Santo Amaro">
+            <option value="Jardim Angela">
+            <option value="diadema">
+        </datalist>
+
+        <p>Observações:</p>
+        <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
