@@ -15,23 +15,26 @@ body {
 
 header {
    
-    color: #fff0f0;
+    color: #f0f0f0;
     text-align: center;
     padding: 0px;
 }
 
 header h1 {
+    color: #eceaea;
     margin: 2;
 }
 
 nav ul {
+    color: #eceaea;
     list-style: none;
     padding: 2;
 }
 
 nav li {
+    color: #eceaea;
     display: inline;
-    margin-right: 20px;
+    margin-right: 20cm;
 }
 
 nav a {
@@ -52,23 +55,25 @@ nav a {
 }
 
 .button:hover {
-    background-color: #a31f1f;
+    background-color: #000000;
 }
 
 
 article, section {
-    margin: 30px;
-    padding: 30px;
+    margin: 10mm;
+    padding: 30pt;
     border: 3px rgb(207, 207, 207) #fffcfc;
 }
 
 
 h1, h2 {
+    color: #eceaea;
     font-size: 4em;
 }
 
 p {
-    font-size: 1.2em;
+    color: #fff5f5;
+    font-size: 1.2pc;
 }
 
 
@@ -83,5 +88,5 @@ article, section {
 }
 
 nav ul {
-    font-size: 1.5rem;
+    font-size: 0.5in;
 }
