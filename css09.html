@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style09.css">
+    <style>
+      
+        ul {
+            list-style: none;
+            padding: 0;
+           
+        }
+
+       
+        li {
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ec1010;
+            float: left;
+            text-align: center;
+        }
+
+        li:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        li:first-child {
+            background-color: #000000;
+            color: #000000;
+        }
+
+        li:last-child {
+            background-color: #000000;
+            color: #e9e9e9;
+        }
+
+    
+        li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        li a:hover {
+            color: #e9be01;
+        }
+
+       
+        li::after {
+            content: " (saber mais)";
+            color: #911f1f;
+        }
+    </style>
+</head>
+<body class="showcase">
+    <h1>pseudoclasses atividade</h1>
+    <ul>
+        <li><a href="#">Item 10</a></li>
+        <li><a href="#">Item 20</a></li>
+        <li><a href="#">Item 30</a></li>
+        <li><a href="#">Item 40</a></li>
+        <li><a href="#">Item 50</a></li>
+    </ul>
+</body>
+</html>
