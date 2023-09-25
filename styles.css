@@ -1,0 +1,35 @@
+:root {
+    --cor-fundo: #ffffff; 
+}
+
+body {
+    background-color: var(--cor-fundo); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input[type="color"] {
+    width: 100%;
+}
