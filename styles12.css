@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(8, 6, 6);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-1 {
+    color: mintcream;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    color: rgb(190, 0, 0);
+
+}
+
+.container-2 {
+    color: mintcream;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+    margin: 20px;
+}
+
+.container-3 {
+    color: mintcream;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+    justify-items: center;
+}
+
+.container-4 {
+    color: mintcream;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+}
+
+
+.container-5 {
+    color: mintcream;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+    justify-content: start;
+}
+
+.container-6 {
+    color: mintcream;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+    align-content: center;
+   
+}
+
+
+.container-7 {
+    color: mintcream;
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.item {
+    background-color: #df2020;
+    text-align: center;
+    padding: 20px;
+}

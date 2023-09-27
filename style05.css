@@ -15,12 +15,12 @@ body {
 
 .showcase {
     background-image:url(capa.jpg);
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-position: center;
     background-size: cover;
 }
 h1 {
-    background-color: #f80099;
+    background-color: #e2e2e2;
     color: #5607e9;
     line-height: 200%;
     font-family: Georgia,'Courier New', Courier, monospace,serif;
