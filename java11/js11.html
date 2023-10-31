@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Boas-Vindas</title>
+</head>
+<body>
+
+    <script>
+      
+        window.alert("Bem-vindo à minha página!");
+
+    
+        var titulo = document.title;
+        console.log("Título da página: " + titulo);
+
+       
+        var section = document.createElement("section");
+        var article = document.createElement("article");
+        var h1 = document.createElement("h1");
+        var p = document.createElement("p");
+
+      
+        h1.textContent = " Artigo";
+        p.textContent = " parágrafo de exemplo.";
+
+
+        document.body.appendChild(section);
+        section.appendChild(article);
+        article.appendChild(h1);
+        article.appendChild(p);
+    </script>
+
+</body>
+</html>
