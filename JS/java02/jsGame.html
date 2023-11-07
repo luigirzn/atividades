@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #inputBox {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Jogo de Adivinhação</h1>
+        <p>Tente adivinhar o número de 0 a 10:</p>
+        <div id="result"></div>
+        <div id="inputBox">
+            <input type="number" id="userInput" min="0" max="10">
+            <button onclick="verificarAdivinhacao()">Verificar</button>
+        </div>
+    </div>
+
+    <script>
+     
+        function gerarNumeroAleatorio() {
+            return Math.floor(Math.random() * 11);
+        }
+
+   
+        var numeroSorteado = gerarNumeroAleatorio();
+
+    
+        function verificarAdivinhacao() {
+            var userInput = document.getElementById("userInput").value;
+
+   
+            if (userInput == numeroSorteado) {
+                document.getElementById("result").innerHTML = "Parabéns, você acertou!";
+                document.getElementById("result").style.color = "#4caf50";
+                document.getElementById("inputBox").style.display = "none";
+            } else {
+                document.getElementById("result").innerHTML = "Tente novamente";
+                document.getElementById("result").style.color = "#e74c3c";
+            }
+        }
+    </script>
+
+</body>
+</html>
